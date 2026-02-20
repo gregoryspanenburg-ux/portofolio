@@ -6,7 +6,7 @@ import {ExpertiseBox} from "@/components/home/about/ExpertiseBox.tsx";
 
 export function About(){
     return(
-        <main className="mt-35 flex flex-col items-center justify-center">
+        <main className="mt-25 flex flex-col items-center justify-center">
             <TitlePill Icon={Zap} text={"About Me"}/>
             <h2 className="text-4xl md:text-5xl mt-8">Background & Skills</h2>
             <p className="mt-5 text-gray-500">A journey through education and technology</p>

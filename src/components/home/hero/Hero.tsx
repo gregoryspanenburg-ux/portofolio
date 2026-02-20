@@ -1,4 +1,4 @@
-import {Atom, Brain, Code, Database, GitCompareArrows, Mail, Sparkles, Users} from "lucide-react"
+import {ArrowDown, Atom, Brain, Code, Database, GitCompareArrows, Mail, Sparkles, Users} from "lucide-react"
 import { CodePill } from "@/components/home/hero/CodePill.tsx"
 import {LinkPill} from "@/components/home/hero/LinkPill.tsx";
 import {TitlePill} from "@/components/home/TitlePill.tsx";
@@ -97,7 +97,10 @@ export function Hero(){
                 </div>
 
             </div>
-
+            <div className="animate-bounce mt-16 flex flex-col items-center justify-center">
+                <p className="text-orange-400/60 text-sm">Explore</p>
+                <ArrowDown className="mt-2 text-orange-400/60" />
+            </div>
         </header>
     )
 }
