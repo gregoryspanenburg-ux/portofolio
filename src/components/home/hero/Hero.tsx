@@ -46,7 +46,7 @@ export function Hero(){
 
                         <TechnologyCard
                             locationStyling={"top-0 left-45"}
-                            borderColorStyling={"border-orange-400"}
+                            borderColorStyling={"border-orange-400/40 group-hover:border-orange-400/80"}
                             Icon={Code}
                             iconStyling={"text-orange-400"}
                             shadowColorStyling={"from-orange-400/80 to-yellow-400/80"}
@@ -56,7 +56,7 @@ export function Hero(){
 
                         <TechnologyCard
                             locationStyling={"top-[35%] left-[-10px]"}
-                            borderColorStyling={"border-purple-400"}
+                            borderColorStyling={"border-purple-400/40 group-hover:border-purple-400/80"}
                             Icon={Code}
                             iconStyling={"text-purple-400"}
                             shadowColorStyling={"from-purple-400/80 to-violet-400/80"}
@@ -66,7 +66,7 @@ export function Hero(){
 
                         <TechnologyCard
                             locationStyling={"top-[70%] left-[35%]"}
-                            borderColorStyling={"border-red-700"}
+                            borderColorStyling={"border-red-700/40 group-hover:border-red-700/80"}
                             Icon={Database}
                             iconStyling={"text-red-700"}
                             shadowColorStyling={"from-red-700/80 to-rose-700/80"}
@@ -76,7 +76,7 @@ export function Hero(){
 
                         <TechnologyCard
                             locationStyling={"top-10 right-15"}
-                            borderColorStyling={"border-sky-400"}
+                            borderColorStyling={"border-sky-400/40 group-hover:border-sky-400/80"}
                             Icon={Atom}
                             iconStyling={"text-sky-400"}
                             shadowColorStyling={"from-sky-400/80 to-indigo-400/80"}
@@ -86,7 +86,7 @@ export function Hero(){
 
                         <TechnologyCard
                             locationStyling={"bottom-20 right-15"}
-                            borderColorStyling={"border-lime-400"}
+                            borderColorStyling={"border-lime-400/40 group-hover:border-lime-400/80"}
                             Icon={Brain}
                             iconStyling={"text-lime-400"}
                             shadowColorStyling={"from-lime-400/80 to-green-400/80"}
@@ -98,7 +98,7 @@ export function Hero(){
 
             </div>
             <div className="animate-bounce mt-16 flex flex-col items-center justify-center">
-                <p className="text-orange-400/60 text-sm">Explore</p>
+                <p className="text-orange-400/60 text-sm select-none">Explore</p>
                 <ArrowDown className="mt-2 text-orange-400/60" />
             </div>
         </header>
