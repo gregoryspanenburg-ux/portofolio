@@ -4,14 +4,17 @@ interface LinkPillProps{
     Icon: React.ElementType
     name: string
     linkTo: string
+    isMail?: boolean
     activate?: boolean
 }
 
-export function LinkPill({Icon, name, linkTo, activate} : LinkPillProps) {
+export function LinkPill({Icon, name, linkTo, activate, isMail = false} : LinkPillProps) {
     if(activate == undefined) activate = false;
 
+    const href = (isMail ? "mailto:" : "") + linkTo
+
     return(
-        <a className="relative group" href={linkTo} target="_blank">
+        <a className="relative group" href={href} target="_blank">
             <div className={cn(
                 "relative z-10 flex items-center gap-2 py-4 px-8 text-sm font-bold rounded-2xl border-1 cursor-pointer transition duration-500",
                 activate ?

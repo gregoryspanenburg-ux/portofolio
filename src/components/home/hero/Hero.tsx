@@ -1,4 +1,4 @@
-import {Atom, Brain, Code, Database, GitCompareArrows, Sparkles, Users} from "lucide-react"
+import {Atom, Brain, Code, Database, GitCompareArrows, Mail, Sparkles, Users} from "lucide-react"
 import { CodePill } from "@/components/home/hero/CodePill.tsx"
 import {LinkPill} from "@/components/home/hero/LinkPill.tsx";
 import {TitlePill} from "@/components/home/TitlePill.tsx";
@@ -28,6 +28,7 @@ export function Hero(){
                         <div className="mt-12 justify-center flex flex-wrap gap-4">
                             <LinkPill activate={true} Icon={GitCompareArrows} name={"Github"} linkTo="https://github.com/gregoryspanenburg-ux"/>
                             <LinkPill Icon={Users} name={"LinkedIn"} linkTo="https://www.linkedin.com/in/gregory-spanenburg-664b8b1a8/"/>
+                            <LinkPill Icon={Mail} name={"Contact"} linkTo="gregory.spanenburg@gmail.com" isMail={true}/>
                         </div>
                     </div>
                     <div className="relative hidden lg:flex items-center justify-center flex-1">
