@@ -38,54 +38,61 @@ export function About(){
 
                     <h3 className="mt-15 text-center">Technical Expertise</h3>
 
-                    <div className="mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 auto-rows-fr">
-                        <ExpertiseBox
-                            Icon={Server}
-                            fromColor={"red"}
-                            toColor={"yellow"}
-                            expertise={"Backend Development"}
-                            skills={[
-                                "Java Spring Boot",
-                                ".NET",
-                                "Node.js",
-                                "REST APIs",
-                                "Authentication & Authorization",
-                                "Debugging & Testing"
-                            ]}/>
-                        <ExpertiseBox
-                            Icon={Code}
-                            fromColor={"cyan"}
-                            toColor={"blue"}
-                            expertise={"Frontend Development"}
-                            skills={[
-                                "React",
-                                "TypeScript",
-                                "TailwindCSS",
-                                "Responsive Design",
-                                "UI/UX Design"
-                            ]}/>
-                        <ExpertiseBox
-                            Icon={Database}
-                            fromColor={"violet"}
-                            toColor={"purple"}
-                            expertise={"Database & NoSQL"}
-                            skills={[
-                                "SQL (PostgreSQL, MySQL)",
-                                "NoSQL (MongoDB)",
-                                "Database Design",
-                                "Query Optimization"
-                            ]}/>
-                        <ExpertiseBox
-                            Icon={Brain}
-                            fromColor={"lime"}
-                            toColor={"green"}
-                            expertise={"Data Science"}
-                            skills={[
-                                "Data Analysis",
-                                "Data Visualization",
-                                "Python for Data Manipulation"
-                            ]}/>
+                    <div className="relative">
+                        <span className="absolute top-0 left-10 size-[10em] bg-secondary blur-[120px] animate-float"/>
+                        <span className="absolute top-1/2 left-2/3 size-[10em] bg-accent blur-[120px] animate-float"/>
+
+
+                        <div className="relative z-10 mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 auto-rows-fr">
+                            <ExpertiseBox
+                                Icon={Server}
+                                fromColor={"red"}
+                                toColor={"yellow"}
+                                expertise={"Backend Development"}
+                                skills={[
+                                    "Java Spring Boot",
+                                    ".NET",
+                                    "Node.js",
+                                    "REST APIs",
+                                    "Authentication & Authorization",
+                                    "Debugging & Testing"
+                                ]}/>
+                            <ExpertiseBox
+                                Icon={Code}
+                                fromColor={"cyan"}
+                                toColor={"blue"}
+                                expertise={"Frontend Development"}
+                                skills={[
+                                    "React",
+                                    "TypeScript",
+                                    "TailwindCSS",
+                                    "Responsive Design",
+                                    "UI/UX Design"
+                                ]}/>
+                            <ExpertiseBox
+                                Icon={Database}
+                                fromColor={"violet"}
+                                toColor={"purple"}
+                                expertise={"Database & NoSQL"}
+                                skills={[
+                                    "SQL (PostgreSQL, MySQL)",
+                                    "NoSQL (MongoDB)",
+                                    "Database Design",
+                                    "Query Optimization"
+                                ]}/>
+                            <ExpertiseBox
+                                Icon={Brain}
+                                fromColor={"lime"}
+                                toColor={"green"}
+                                expertise={"Data Science"}
+                                skills={[
+                                    "Data Analysis",
+                                    "Data Visualization",
+                                    "Python for Data Manipulation"
+                                ]}/>
+                        </div>
                     </div>
+
 
                     <div className="mt-16 flex flex-wrap gap-6">
                         <HoverBox className="flex-1" fromColor={"cyan"} toColor={"blue"}>
